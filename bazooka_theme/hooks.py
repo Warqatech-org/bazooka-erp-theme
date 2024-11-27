@@ -5,6 +5,17 @@ app_description = "Bazooka Theme for erpnext"
 app_email = "warqatech@gmail.com"
 app_license = "MIT"
 
+brand_html = "WtechERP"
+
+website_context = {
+    "favicon": "/assets/bazooka_theme/img/favicon.jpeg",
+    "splash_image": "/assets/bazooka_theme/img/favicon.jpeg",
+}
+
+app_include_css = "/assets/bazooka_theme/css/bazooka.css"
+app_include_js = "/assets/bazooka_theme/js/bazooka.js"
+
+
 # Includes in <head>
 # ------------------
 

@@ -1,0 +1,114 @@
+/* Global */
+:root {
+  --main-color: #ff8c00; /* Orange (Primary Color) */
+  --second-color: #ffa64d; /* Lighter Orange */
+  --second-color-dark: #cc6e00; /* Darker Orange */
+  --third-color: #ff5500; /* A vibrant complementary shade */
+  --widget-bg: #ffffff; /* White background */
+  --widget-bg-dark: #000000; /* Black background */
+  --text-color-light: #ffffff; /* White text for contrast */
+  --text-color-dark: #cccccc; /* Grey text */
+}
+
+/* Light Theme */
+
+[data-theme="light"] {
+  --primary: var(--main-color);
+  --dt-primary-color: var(--main-color);
+  --blue-avatar-bg: var(--main-color);
+  --blue-avatar-color: var(--main-color);
+  --blue: var(--main-color);
+}
+
+[data-theme="light"] .page-container,
+[data-theme="light"] .layout-main-section {
+  background-color: var(--widget-bg);
+}
+
+[data-theme="light"] ul li a:hover,
+[data-theme="light"] ul li button:hover {
+  background-color: var(--second-color);
+  color: #fff;
+}
+
+[data-theme="light"] body {
+  font-size: 14px;
+  background-color: #f7f7f7; /* Light white background */
+}
+
+[data-theme="light"] a {
+  color: #333;
+  font-weight: 500;
+}
+
+[data-theme="light"] .standard-sidebar-item.selected {
+  background: linear-gradient(to right, var(--main-color), var(--second-color));
+}
+
+[data-theme="light"] .standard-sidebar-item.selected a {
+  color: #fff;
+}
+
+[data-theme="light"] .navbar {
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--second-color)
+  ) !important;
+}
+
+/* Dark Theme */
+
+[data-theme="dark"] {
+  --primary: var(--main-color);
+  --dt-primary-color: var(--main-color);
+  --blue-avatar-bg: var(--main-color);
+  --blue-avatar-color: var(--main-color);
+  --blue: var(--main-color);
+}
+
+[data-theme="dark"] .page-container,
+[data-theme="dark"] .layout-main-section {
+  background-color: var(--widget-bg-dark);
+}
+
+[data-theme="dark"] ul li a:hover,
+[data-theme="dark"] ul li button:hover {
+  background-color: var(--second-color-dark);
+  color: var(--text-color-light);
+}
+
+[data-theme="dark"] body {
+  font-size: 14px;
+  background-color: var(--widget-bg-dark);
+  color: var(--text-color-light);
+}
+
+[data-theme="dark"] .standard-sidebar-item.selected {
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--second-color-dark)
+  );
+}
+
+[data-theme="dark"] .navbar {
+  background: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--second-color-dark)
+  ) !important;
+}
+
+/* Buttons */
+[data-theme="light"] .btn-primary,
+[data-theme="dark"] .btn-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+[data-theme="light"] .btn-secondary,
+[data-theme="dark"] .btn-secondary {
+  background-color: var(--third-color);
+  color: var(--text-color-light);
+}
